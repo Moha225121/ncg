@@ -31,6 +31,15 @@
       text-align:center;
     }
 
+    .logo{
+      width:140px;
+      max-width:70vw;
+      height:auto;
+      margin:0 auto 20px;
+      display:block;
+      filter:drop-shadow(0 8px 16px rgba(0,0,0,.2));
+    }
+
     header h1{
       font-size:3rem;
       font-weight:800;
@@ -74,8 +83,9 @@
     /* Brands */
     .brands{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+      grid-template-columns:repeat(2,minmax(150px,1fr));
       gap:25px;
+      justify-items:center;
     }
 
     .brand-card{
@@ -89,6 +99,19 @@
       min-height:120px;
       color:var(--gray);
       font-weight:600;
+      width:100%;
+      max-width:240px;
+    }
+
+    .brand-card.is-centered{
+      grid-column:1 / -1;
+    }
+
+    .brand-card img{
+      max-width:100%;
+      max-height:80px;
+      object-fit:contain;
+      display:block;
     }
 
     /* Distributors */
@@ -143,13 +166,19 @@
       header h1{font-size:2.2rem}
       .section-title h2{font-size:1.8rem}
     }
+
+    @media(max-width:600px){
+      .brands{grid-template-columns:1fr}
+      .brand-card.is-centered{grid-column:auto}
+    }
   </style>
 </head>
 <body>
 
   <!-- HERO -->
   <header>
-    <h1>New Clean Group</h1>
+    <img class="logo" src="static/image.png" alt="New Clean Company logo" />
+    <h1>New Clean Company</h1>
     <p>شركة متخصصة في منتجات وخدمات النظافة – بنغازي، ليبيا</p>
   </header>
 
@@ -161,7 +190,7 @@
     </div>
     <div class="about">
       <p>
-        تأسست شركة <strong>New Clean Group</strong> عام <strong>2021</strong>، 
+        تأسست شركة <strong>New Clean Company</strong> عام <strong>2021</strong>، 
         وتعمل في مجال توفير منتجات وخدمات النظافة عالية الجودة،
         مع اعتماد علامات تجارية موثوقة وتغطية واسعة داخل مدينة بنغازي.
       </p>
@@ -178,10 +207,15 @@
       <p>سيتم عرض شعارات العلامات هنا</p>
     </div>
     <div class="brands">
-      <div class="brand-card">شعار علامة 1</div>
-      <div class="brand-card">شعار علامة 2</div>
-      <div class="brand-card">شعار علامة 3</div>
-      <div class="brand-card">شعار علامة 4</div>
+      <div class="brand-card">
+        <img src="static/image copy.png" alt="شعار العلامة 1" />
+      </div>
+      <div class="brand-card">
+        <img src="static/image copy 2.png" alt="شعار العلامة 2" />
+      </div>
+      <div class="brand-card is-centered">
+        <img src="static/image copy 3.png" alt="شعار العلامة 3" />
+      </div>
     </div>
   </section>
 
@@ -224,7 +258,7 @@
   </section>
 
   <footer>
-    © 2026 New Clean Group – جميع الحقوق محفوظة
+    © 2026 New Clean Company – جميع الحقوق محفوظة
   </footer>
 
 </body>

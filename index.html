@@ -114,6 +114,31 @@
       display:block;
     }
 
+    /* Products */
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+      gap:25px;
+    }
+
+    .product-card{
+      background:#fff;
+      border-radius:16px;
+      padding:20px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 10px 25px rgba(0,0,0,.06);
+      min-height:140px;
+    }
+
+    .product-card img{
+      max-width:100%;
+      max-height:120px;
+      object-fit:contain;
+      display:block;
+    }
+
     /* Distributors */
     .distributors{
       display:grid;
@@ -179,7 +204,7 @@
   <header>
     <img class="logo" src="static/image.png" alt="New Clean Company logo" />
     <h1>New Clean Company</h1>
-    <p>شركة متخصصة في منتجات وخدمات النظافة – بنغازي، ليبيا</p>
+    <p>شركة متخصصة في مواد التنظيف والعطور – بنغازي، ليبيا</p>
   </header>
 
   <!-- ABOUT -->
@@ -191,7 +216,7 @@
     <div class="about">
       <p>
         تأسست شركة <strong>New Clean Company</strong> عام <strong>2021</strong>، 
-        وتعمل في مجال توفير منتجات وخدمات النظافة عالية الجودة،
+        وتعمل في مجال توفير مواد التنظيف والعطور عالية الجودة،
         مع اعتماد علامات تجارية موثوقة وتغطية واسعة داخل مدينة بنغازي.
       </p>
       <p style="margin-top:15px;">
@@ -204,7 +229,6 @@
   <section>
     <div class="section-title">
       <h2>العلامات التجارية المعتمدة</h2>
-      <p>سيتم عرض شعارات العلامات هنا</p>
     </div>
     <div class="brands">
       <div class="brand-card">
@@ -215,6 +239,58 @@
       </div>
       <div class="brand-card is-centered">
         <img src="static/image copy 3.png" alt="شعار العلامة 3" />
+      </div>
+      <div class="brand-card">
+        <img src="static/image copy 4.png" alt="شعار العلامة 4" />
+      </div>
+      <div class="brand-card">
+        <img src="static/image copy 5.png" alt="شعار العلامة 5" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section>
+    <div class="section-title">
+      <h2>منتجاتنا</h2>
+      <p>مجموعة من منتجاتنا</p>
+    </div>
+    <div class="products">
+      <div class="product-card">
+        <img src="static/product_1.png" alt="منتج 1" />
+      </div>
+      <div class="product-card">
+        <img src="static/product_2.png" alt="منتج 2" />
+      </div>
+      <div class="product-card">
+        <img src="static/product_3.png" alt="منتج 3" />
+      </div>
+      <div class="product-card">
+        <img src="static/product_4.png" alt="منتج 4" />
+      </div>
+      <div class="product-card">
+        <img src="static/product_5.png" alt="منتج 5" />
+      </div>
+      <div class="product-card">
+        <img src="static/product_6.png" alt="منتج 6" />
+      </div>
+      <div class="product-card">
+        <img src="static/product_7.png" alt="منتج 7" />
+      </div>
+      <div class="product-card">
+        <img src="static/product_8.png" alt="منتج 8" />
+      </div>
+      <div class="product-card">
+        <img src="static/product_9.png" alt="منتج 9" />
+      </div>
+      <div class="product-card">
+        <img src="static/product_10.png" alt="منتج 10" />
+      </div>
+      <div class="product-card">
+        <img src="static/product_11.png" alt="منتج 11" />
+      </div>
+      <div class="product-card">
+        <img src="static/product_12.png" alt="منتج 12" />
       </div>
     </div>
   </section>
@@ -228,19 +304,23 @@
     <div class="distributors">
       <div class="dist-card">
         <h3>موزع رقم 1</h3>
-        <p>سيتم إضافة البيانات لاحقًا</p>
+        <p>سوق المنصورة لمواد التنظيف</p>
+        <p>العنوان: طريق الهواري العام بعد مستشفى القلب على اليمين</p>
       </div>
       <div class="dist-card">
         <h3>موزع رقم 2</h3>
-        <p>سيتم إضافة البيانات لاحقًا</p>
+        <p>مول الحياة التجاري</p>
+        <p>العنوان: سيدي حسين السيلس بالقرب من مفترق المدينة</p>
       </div>
-      <div class="dist-card">
+      <div class="dist-card" >
         <h3>موزع رقم 3</h3>
-        <p>سيتم إضافة البيانات لاحقًا</p>
+        <p>تاج مول</p>
+        <p>العنوان: شبنة بالقرب من شارع الزيت</p>
       </div>
       <div class="dist-card">
         <h3>موزع رقم 4</h3>
-        <p>سيتم إضافة البيانات لاحقًا</p>
+        <p>صالة المغيربي "جملة"</p>
+        <p>العنوان: شبنة شارع الرابش</p>
       </div>
     </div>
   </section>
